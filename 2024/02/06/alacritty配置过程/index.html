@@ -16,23 +16,21 @@
   <meta name="author" content="Flork">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Manjaro配置alacritty的过程">
+    <meta name="description" content="— title: alacritty配置过程 date: 2023-02-14 15:04:06tags:- alacritty- Linuxcategories:- Linux- Manjaroexcerpt: Manjaro配置alacritty的过程2024-3-6 updatealacritty从v0.13.0后将配置文件从yaml移动到toml文件中，所以之前的yaml文件后续可能会作废">
 <meta property="og:type" content="article">
-<meta property="og:title" content="alacritty配置过程">
-<meta property="og:url" content="https://freddiegeorge.github.io/2023/02/14/alacritty%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/index.html">
+<meta property="og:title" content="Flork&#39;s Blog">
+<meta property="og:url" content="https://freddiegeorge.github.io/2024/02/06/alacritty%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Flork&#39;s Blog">
-<meta property="og:description" content="Manjaro配置alacritty的过程">
+<meta property="og:description" content="— title: alacritty配置过程 date: 2023-02-14 15:04:06tags:- alacritty- Linuxcategories:- Linux- Manjaroexcerpt: Manjaro配置alacritty的过程2024-3-6 updatealacritty从v0.13.0后将配置文件从yaml移动到toml文件中，所以之前的yaml文件后续可能会作废">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-14T07:04:06.000Z">
-<meta property="article:modified_time" content="2023-08-19T06:08:43.488Z">
+<meta property="article:published_time" content="2024-02-05T18:11:16.593Z">
+<meta property="article:modified_time" content="2024-02-05T18:11:16.593Z">
 <meta property="article:author" content="Flork">
-<meta property="article:tag" content="alacritty">
-<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>alacritty配置过程 - Flork&#39;s Blog</title>
+  <title>Flork&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="alacritty配置过程"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -226,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-14 15:04" pubdate>
-          2023年2月14日 下午
+        <time datetime="2024-02-06 02:11" pubdate>
+          2024年2月6日 凌晨
         </time>
       </span>
     
@@ -238,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          1.9k 字
         
       </span>
     
@@ -249,7 +247,7 @@
         
         
         
-          7 分钟
+          8 分钟
         
       </span>
     
@@ -295,12 +293,13 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">alacritty配置过程</h1>
+            <h1 style="display: none"></h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这几天在跟着视频配置自己的dwm的时候了解到了alacritty，号称是最快的终端模拟器，利用GPU加速使得终端反应速度非常快，而且整体也很简约好看，便打算给自己的Manjaro配置一下。</p>
+                <h2 id="—-title-alacritty配置过程-date-2023-02-14-15-04-06tags-alacritty-Linuxcategories-Linux-Manjaroexcerpt-Manjaro配置alacritty的过程"><a href="#—-title-alacritty配置过程-date-2023-02-14-15-04-06tags-alacritty-Linuxcategories-Linux-Manjaroexcerpt-Manjaro配置alacritty的过程" class="headerlink" title="— title: alacritty配置过程 date: 2023-02-14 15:04:06tags:- alacritty- Linuxcategories:- Linux- Manjaroexcerpt: Manjaro配置alacritty的过程"></a>— title: alacritty配置过程 date: 2023-02-14 15:04:06<br>tags:<br>- alacritty<br>- Linux<br>categories:<br>- Linux<br>- Manjaro<br>excerpt: Manjaro配置alacritty的过程</h2><h2 id="2024-3-6-update"><a href="#2024-3-6-update" class="headerlink" title="2024-3-6 update"></a>2024-3-6 update</h2><p>alacritty从v0.13.0后将配置文件从yaml移动到toml文件中，所以之前的yaml文件后续可能会作废，目前官方关于新的toml文件的使用方法还是比较齐全的，可以自行查看<a target="_blank" rel="noopener" href="https://alacritty.org/config-alacritty.html">官方手册</a>更新自己的配置文件，后续我的配置文件迁移过来后也会贴一份到博客中(TODO)</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这几天在跟着视频配置自己的dwm的时候了解到了alacritty，号称是最快的终端模拟器，利用GPU加速使得终端反应速度非常快，而且整体也很简约好看，便打算给自己的Manjaro配置一下。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Manjaro安装alacritty也很简单，只需要<code>sudo pacman -S alacritty</code>即可。然后在终端输入<code>alacritty</code>就可以打开了。</p>
 <p>在我安装的时候，alacritty的版本为0.11.0,以下配置都以这个版本为准，如有更新需自行查阅官方文档</p>
 <h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>我也懒得去折腾自己的主题了，感觉<a target="_blank" rel="noopener" href="https://github.com/alacritty/alacritty-theme">官方的主题</a>都看着挺顺眼,便安装了官方的主题，直接输入这两条指令即可</p>
@@ -322,43 +321,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Linux/Manjaro/" class="category-chain-item">Manjaro</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/alacritty/">#alacritty</a>
-      
-        <a href="/tags/Linux/">#Linux</a>
-      
-    </div>
   
 </div>
 
@@ -368,8 +330,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>alacritty配置过程</div>
-      <div>https://freddiegeorge.github.io/2023/02/14/alacritty配置过程/</div>
+      <div></div>
+      <div>https://freddiegeorge.github.io/2024/02/06/alacritty配置过程/</div>
     </div>
     <div class="license-meta">
       
@@ -381,7 +343,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年2月14日</div>
+          <div>2024年2月6日</div>
         </div>
       
       
@@ -413,18 +375,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/02/27/%E6%9C%80%E8%BF%91%E7%9A%84%E6%83%85%E5%86%B5/" title="最近的情况">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">最近的情况</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/02/14/%E6%88%91%E7%9A%84vim%E9%85%8D%E7%BD%AE/" title="我的vim配置">
-                        <span class="hidden-mobile">我的vim配置</span>
+                      <a href="/2023/07/04/%E5%BC%80%E5%8F%91%E6%9D%BF%E4%B8%8EPC%E4%B8%B2%E5%8F%A3%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6/" title="开发板与PC串口传输文件">
+                        <span class="hidden-mobile">开发板与PC串口传输文件</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
